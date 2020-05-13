@@ -1,0 +1,37 @@
+.rotate-vinyl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 472px;
+    width: 472px;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .rotate-vinyl {
+        animation: vinyl-spin infinite 5s linear;
+    }
+}
+
+.rotate-vinyl__image {
+    background-size: contain;
+    width: 220px;
+    height: 220px;
+}
+
+.rotate-vinyl__vinyl {
+    background-image: url(./vinyl.png);
+    background-size: contain;
+    position: absolute;
+    width: 472px;
+    height: 472px;
+}
+
+@keyframes vinyl-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

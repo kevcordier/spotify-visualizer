@@ -1,0 +1,41 @@
+.vinyl-sleeve {
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+    position: relative;
+    left: -20px;
+    pointer-events: none;
+}
+
+.vinyl-sleeve__image {
+    background-size: contain;
+    position: absolute;
+    z-index: 10;
+    width: 400px;
+    height: 400px;
+}
+
+.vinyl-sleeve__vinyl {
+    background-image: url(./vinyl.png);
+    background-size: contain;
+    position: relative;
+    left: 100px;
+    width: 400px;
+    height: 400px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .vinyl-sleeve__vinyl {
+        animation: vinyl-spin infinite 5s linear;
+    }
+}
+
+@keyframes vinyl-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
