@@ -17,7 +17,7 @@
 }
 
 .vinyl-sleeve__vinyl {
-    background-image: url(./vinyl.png);
+    background-image: url(../../public/vinyl.png);
     background-size: contain;
     position: relative;
     left: 100px;

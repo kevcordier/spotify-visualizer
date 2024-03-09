@@ -2,9 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 472px;
-    width: 472px;
     pointer-events: none;
+    position: relative;
+    aspect-ratio: 1;
+    min-width: 30px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,16 +16,17 @@
 
 .rotate-vinyl__image {
     background-size: contain;
-    width: 220px;
-    height: 220px;
+    position: absolute;
+    width: 50%;
+    height: 50%;
 }
 
 .rotate-vinyl__vinyl {
-    background-image: url(./vinyl.png);
+    background-image: url(../../public/vinyl.png);
     background-size: contain;
     position: absolute;
-    width: 472px;
-    height: 472px;
+    width: 100%;
+    height: 100%;
 }
 
 @keyframes vinyl-spin {
