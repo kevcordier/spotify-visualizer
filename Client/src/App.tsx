@@ -26,8 +26,6 @@ import VinylSleeve from "./components/VinylSleeve";
 import './App.css';
 import { Box, Container, Fab, Link, useMediaQuery } from '@mui/material';
 export const authEndpoint = 'https://accounts.spotify.com/authorize';
-const clientId = 'b347d2ec2383419280774a3b67326182';
-const clientSecret = 'b540f1d67f9841338a6d509df8b85c77';
 const redirectUri = 'http://localhost:3000';
 const scopes = [
   "user-read-currently-playing",
